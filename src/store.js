@@ -75,10 +75,10 @@ function payLoan() {
   return { type: 'account/payLoan' };
 }
 
-store.dispatch(deposit(500));
-store.dispatch(withdraw(200));
-store.dispatch(requestLoan(1000, 'Buy a car'));
-store.dispatch(payLoan());
+// store.dispatch(deposit(500));
+// store.dispatch(withdraw(200));
+// store.dispatch(requestLoan(1000, 'Buy a car'));
+// store.dispatch(payLoan());
 // console.log(store.getState());
 
 function createCustomer(fullName, nationalID) {
@@ -92,6 +92,6 @@ function updateName(fullName) {
   return { type: 'customer/updateName', payload: fullName };
 }
 
-store.dispatch(createCustomer('Jonas Schmedtmann', '24242342'));
-store.dispatch(updateName('Johnny Bravo'));
-console.log(store.getState());
+// store.dispatch(createCustomer('Jonas Schmedtmann', '24242342'));
+// store.dispatch(updateName('Johnny Bravo'));
+// console.log(store.getState());
